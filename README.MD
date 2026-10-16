@@ -19,7 +19,7 @@ To execuce the playwright tests we need to run the following on the command line
 npx playwright test --project=e2e
 ```
 
-The command above will run all the test cases, and we can change the project name based on the tests that we want to execute. This framework includes three different projects that cann be selected by changing the value of the `--project` flag:
+The command above will run all the test cases, and we can change the project name based on the tests that we want to execute. This framework includes three different projects that can be selected by changing the value of the `--project` flag:
 
 - **e2e** - This project will run all test cases.
 - **ui** - This project will run only UI test cases.
@@ -59,19 +59,19 @@ npx playwright test --project=ui --ui
 
 ### Design Pattern
 
-This framework was designed by following a Page Object Model, this means that every Page has a Page class that contains the locators are common methods found in `/pages/`. The same applies to the API endpoints whose classses are located in `/api/`.
+This framework was designed by following a Page Object Model, this means that every Page has a Page class that contains the locators and common methods, found in `/pages/`. The same applies to the API endpoints whose classses are located in `/api/`.
 
-This approach allows for a cleaner writing of test cases (found in `/tests` ) am making the project escalable, reusable and easier to mantain.
+This approach allows for a cleaner writing of test cases (found in `/tests` ) and making the project escalable, reusable and easier to mantain.
 
 ### Custom Fixtures
 
-All the page and api clases are being used in a custom playwright fixture (found in `/fixtures/base.ts`), this allows evry test case to use all these clases without having to create an instance of each class everytime.
+All the page and api clases are being used in a custom playwright fixture (found in `/fixtures/base.ts`), this allows every test case to use all these clases without having to create an instance of each class everytime.
 
 For more information on this approach please visit the [official playwright documentation](https://playwright.dev/docs/test-fixtures).
 
 ### Environment variables
 
-All the sensitive information is located in the `.env` file (found in `/config/.env`). These includes things like user credentials and bas URL's that could change between different environments.
+All the sensitive information is located in the `.env` file (found in `/config/.env`). These includes things like user credentials and base URL's that could change between different environments.
 
 ## Reporting
 
