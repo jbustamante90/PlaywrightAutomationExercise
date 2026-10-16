@@ -9,6 +9,10 @@ export class CartPage {
     this.productQuantity = this.page.locator(".cart_quantity");
     this.checkoutBtn = this.page.getByRole("button", { name: /Checkout/ });
   }
+  //properties
+  get url() {
+    return "/cart.html";
+  }
   //methods
   async getProductList() {
     const map = new Map<string, string>();

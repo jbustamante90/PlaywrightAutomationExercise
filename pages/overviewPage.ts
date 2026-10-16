@@ -5,5 +5,9 @@ export class OverviewPage {
   constructor(private page: Page) {
     this.finishBtn = this.page.getByRole("button", { name: /Finish/ });
   }
+  //properties
+  get url() {
+    return "/checkout-step-two.html";
+  }
   //methods
 }

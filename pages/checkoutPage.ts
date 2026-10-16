@@ -11,6 +11,10 @@ export class CheckoutPage {
     this.zipCodeInput = this.page.getByPlaceholder(/Zip/);
     this.continueBtn = this.page.getByRole("button", { name: /Continue/ });
   }
+  //properties
+  get url() {
+    return "/checkout-step-one.html";
+  }
   //methods
   async checkOut(name: string, lastName: string, zipCode: string) {
     await this.nameInput.fill(name);

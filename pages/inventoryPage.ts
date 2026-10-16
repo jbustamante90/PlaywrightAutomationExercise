@@ -9,6 +9,11 @@ export class InventoryPage {
     this.addToCrtBtn = this.page.getByRole("button", { name: /Add to cart/ });
     this.cartBtn = this.page.getByLabel(/Cart,/);
   }
+
+  //properties
+  get url() {
+    return "/inventory.html";
+  }
   //methods
   async getItemIndex(item: Locator) {}
 

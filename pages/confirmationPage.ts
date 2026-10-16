@@ -5,5 +5,10 @@ export class ConfirmationPage {
   constructor(private page: Page) {
     this.thaksTxt = this.page.locator(".complete-header");
   }
+  //properties
+  get url() {
+    return "/checkout-complete.html";
+  }
+
   //methods
 }
