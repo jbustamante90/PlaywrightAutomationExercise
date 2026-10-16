@@ -104,5 +104,5 @@ The inventory page is showing the wrong product images
 - All Products are showing the same image.
 - The image seems to be a stock photo of a dog.
 
-Severity = High
+Severity = High,
 Priority=1
