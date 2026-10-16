@@ -27,7 +27,7 @@ The command above will run all the test cases, and we can change the project nam
 
 ### API
 
-The full command for exeecuting API tests is
+The full command for executing API tests is
 
 ```bash
 npx playwright test --project=api
@@ -35,7 +35,7 @@ npx playwright test --project=api
 
 ### UI
 
-The full command for exeecuting API tests is
+The full command for executing API tests is
 
 ```bash
 npx playwright test --project=ui
